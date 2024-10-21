@@ -1,4 +1,4 @@
-# Import python packages
+ k# Import python packages
 import streamlit as st
 from snowflake.snowpark.functions import col
 
@@ -43,4 +43,4 @@ if ingredients_list:
 
 import requests
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
-st.text(fruityvice_response)
+st.text(fruityvice_response.json())
